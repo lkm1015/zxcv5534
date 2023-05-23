@@ -115,35 +115,35 @@
       } else if (id === "Busan") {
         link = "foodtap.php?a=<?php echo "부산";?>";
       } else if (id === "Daegu") {
-        link = "링크3";
+        link = "foodtap.php?a=<?php echo "대구";?>";
       } else if (id === "Incheon") {
-        link = "링크4";
+        link = "foodtap.php?a=<?php echo "인천";?>";
       } else if (id === "Gwangju") {
-        link = "링크5";
+        link = "foodtap.php?a=<?php echo "광주";?>";
       } else if (id === "Daejeon") {
-        link = "링크6";
+        link = "foodtap.php?a=<?php echo "대전";?>";
       } else if (id === "Ulsan") {
-        link = "링크7";
+        link = "foodtap.php?a=<?php echo "울산";?>";
       } else if (id === "Sejong") {
-        link = "링크8";
+        link = "foodtap.php?a=<?php echo "세종";?>";
       } else if (id === "Gyeonggi") {
-        link = "링크9";
+        link = "foodtap.php?a=<?php echo "경기";?>";
       } else if (id === "Gangwon") {
-        link = "링크10";
+        link = "foodtap.php?a=<?php echo "강원";?>";
       } else if (id === "Chungbuk") {
-        link = "링크11";
+        link = "foodtap.php?a=<?php echo "충북";?>";
       } else if (id === "Chungnam") {
-        link = "링크12";
+        link = "foodtap.php?a=<?php echo "충남";?>";
       } else if (id === "Jeonbuk") {
-        link = "링크13";
+        link = "foodtap.php?a=<?php echo "전북";?>";
       } else if (id === "Jeonnam") {
-        link = "링크14";
+        link = "foodtap.php?a=<?php echo "전남";?>";
       } else if (id === "Gyeongbuk") {
-        link = "링크15";
+        link = "foodtap.php?a=<?php echo "경북";?>";
       } else if (id === "Gyeongnam") {
-        link = "링크16";
+        link = "foodtap.php?a=<?php echo "경남";?>";
       } else if (id === "Jeju") {
-        link = "링크17";
+        link = "foodtap.php?a=<?php echo "제주";?>";
       }
 
       window.location.href = link;
