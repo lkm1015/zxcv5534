@@ -111,39 +111,39 @@
       // 링크 부분에 지역별 링크 넣을 수 있게 만듦
       let link; 
       if (id === "Seoul") {
-        link = "foodtap.php?a=<?php echo "서울";?>";
+        link = "foodtap.php?a=<?php echo "서울";?>&page=1";
       } else if (id === "Busan") {
-        link = "foodtap.php?a=<?php echo "부산";?>";
+        link = "foodtap.php?a=<?php echo "부산";?>&page=1";
       } else if (id === "Daegu") {
-        link = "foodtap.php?a=<?php echo "대구";?>";
+        link = "foodtap.php?a=<?php echo "대구";?>&page=1";
       } else if (id === "Incheon") {
-        link = "foodtap.php?a=<?php echo "인천";?>";
+        link = "foodtap.php?a=<?php echo "인천";?>&page=1";
       } else if (id === "Gwangju") {
-        link = "foodtap.php?a=<?php echo "광주";?>";
+        link = "foodtap.php?a=<?php echo "광주";?>&page=1";
       } else if (id === "Daejeon") {
-        link = "foodtap.php?a=<?php echo "대전";?>";
+        link = "foodtap.php?a=<?php echo "대전";?>&page=1";
       } else if (id === "Ulsan") {
-        link = "foodtap.php?a=<?php echo "울산";?>";
+        link = "foodtap.php?a=<?php echo "울산";?>&page=1";
       } else if (id === "Sejong") {
-        link = "foodtap.php?a=<?php echo "세종";?>";
+        link = "foodtap.php?a=<?php echo "세종";?>&page=1";
       } else if (id === "Gyeonggi") {
-        link = "foodtap.php?a=<?php echo "경기";?>";
+        link = "foodtap.php?a=<?php echo "경기";?>&page=1";
       } else if (id === "Gangwon") {
-        link = "foodtap.php?a=<?php echo "강원";?>";
+        link = "foodtap.php?a=<?php echo "강원";?>&page=1";
       } else if (id === "Chungbuk") {
-        link = "foodtap.php?a=<?php echo "충북";?>";
+        link = "foodtap.php?a=<?php echo "충북";?>&page=1";
       } else if (id === "Chungnam") {
-        link = "foodtap.php?a=<?php echo "충남";?>";
+        link = "foodtap.php?a=<?php echo "충남";?>&page=1";
       } else if (id === "Jeonbuk") {
-        link = "foodtap.php?a=<?php echo "전북";?>";
+        link = "foodtap.php?a=<?php echo "전북";?>&page=1";
       } else if (id === "Jeonnam") {
-        link = "foodtap.php?a=<?php echo "전남";?>";
+        link = "foodtap.php?a=<?php echo "전남";?>&page=1";
       } else if (id === "Gyeongbuk") {
-        link = "foodtap.php?a=<?php echo "경북";?>";
+        link = "foodtap.php?a=<?php echo "경북";?>&page=1";
       } else if (id === "Gyeongnam") {
-        link = "foodtap.php?a=<?php echo "경남";?>";
+        link = "foodtap.php?a=<?php echo "경남";?>&page=1";
       } else if (id === "Jeju") {
-        link = "foodtap.php?a=<?php echo "제주";?>";
+        link = "foodtap.php?a=<?php echo "제주";?>&page=1";
       }
 
       window.location.href = link;

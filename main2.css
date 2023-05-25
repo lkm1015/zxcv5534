@@ -136,3 +136,6 @@ body {
     border-radius: 8px;
     padding: 3px;
   }
+  .ct {
+    justify-content: center;
+  }

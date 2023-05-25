@@ -286,3 +286,6 @@ h1 {
   flex:9;
   color: #fff;
 }
+.ct {
+  justify-content: center;
+}

@@ -111,39 +111,39 @@
       // 링크 부분에 지역별 링크 넣을 수 있게 만듦
       let link; 
       if (id === "Seoul") {
-        link = "festivaltap.php?a=<?php echo "서울";?>";
+        link = "festivaltap.php?a=<?php echo "서울";?>&page=1";
       } else if (id === "Busan") {
-        link = "festivaltap.php?a=<?php echo "부산";?>";
+        link = "festivaltap.php?a=<?php echo "부산";?>&page=1";
       } else if (id === "Daegu") {
-        link = "festivaltap.php?a=<?php echo "대구";?>";
+        link = "festivaltap.php?a=<?php echo "대구";?>&page=1";
       } else if (id === "Incheon") {
-        link = "festivaltap.php?a=<?php echo "인천";?>";
+        link = "festivaltap.php?a=<?php echo "인천";?>&page=1";
       } else if (id === "Gwangju") {
-        link = "festivaltap.php?a=<?php echo "광주";?>";
+        link = "festivaltap.php?a=<?php echo "광주";?>&page=1";
       } else if (id === "Daejeon") {
-        link = "festivaltap.php?a=<?php echo "대전";?>";
+        link = "festivaltap.php?a=<?php echo "대전";?>&page=1";
       } else if (id === "Ulsan") {
-        link = "festivaltap.php?a=<?php echo "울산";?>";
+        link = "festivaltap.php?a=<?php echo "울산";?>&page=1";
       } else if (id === "Sejong") {
-        link = "festivaltap.php?a=<?php echo "세종";?>";
+        link = "festivaltap.php?a=<?php echo "세종";?>&page=1";
       } else if (id === "Gyeonggi") {
-        link = "festivaltap.php?a=<?php echo "경기";?>";
+        link = "festivaltap.php?a=<?php echo "경기";?>&page=1";
       } else if (id === "Gangwon") {
-        link = "festivaltap.php?a=<?php echo "강원";?>";
+        link = "festivaltap.php?a=<?php echo "강원";?>&page=1";
       } else if (id === "Chungbuk") {
-        link = "festivaltap.php?a=<?php echo "충북";?>";
+        link = "festivaltap.php?a=<?php echo "충북";?>&page=1";
       } else if (id === "Chungnam") {
-        link = "festivaltap.php?a=<?php echo "충남";?>";
+        link = "festivaltap.php?a=<?php echo "충남";?>&page=1";
       } else if (id === "Jeonbuk") {
-        link = "festivaltap.php?a=<?php echo "전북";?>";
+        link = "festivaltap.php?a=<?php echo "전북";?>&page=1";
       } else if (id === "Jeonnam") {
-        link = "festivaltap.php?a=<?php echo "전남";?>";
+        link = "festivaltap.php?a=<?php echo "전남";?>&page=1";
       } else if (id === "Gyeongbuk") {
-        link = "festivaltap.php?a=<?php echo "경북";?>";
+        link = "festivaltap.php?a=<?php echo "경북";?>&page=1";
       } else if (id === "Gyeongnam") {
-        link = "festivaltap.php?a=<?php echo "경남";?>";
+        link = "festivaltap.php?a=<?php echo "경남";?>&page=1";
       } else if (id === "Jeju") {
-        link = "festivaltap.php?a=<?php echo "제주";?>";
+        link = "festivaltap.php?a=<?php echo "제주";?>&page=1";
       }
 
       window.location.href = link;

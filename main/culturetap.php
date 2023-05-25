@@ -23,24 +23,27 @@
     </div>
     
   <div class="container">
-
-        <input type="radio" name="s" id="Seoul">
-        <input type="radio" name="s" id="Busan">
-        <input type="radio" name="s" id="Daegu">
-        <input type="radio" name="s" id="Incheon">
-        <input type="radio" name="s" id="Gwangju">
-        <input type="radio" name="s" id="Daejeon">
-        <input type="radio" name="s" id="Ulsan">
-        <input type="radio" name="s" id="Sejong">
-        <input type="radio" name="s" id="Gyeonggi">
-        <input type="radio" name="s" id="Gangwon">
-        <input type="radio" name="s" id="Chungbuk">
-        <input type="radio" name="s" id="Chungnam">
-        <input type="radio" name="s" id="Jeonbuk">
-        <input type="radio" name="s" id="Jeonnam">
-        <input type="radio" name="s" id="Gyeongbuk">
-        <input type="radio" name="s" id="Gyeongnam">
-        <input type="radio" name="s" id="Jeju">
+  <?
+    $_POST['radio'] = ($_POST['radio']) ? $_POST['radio'] : '1';
+    $arrCheck[$_POST['radio']] = "checked";
+  ?>
+        <input type="radio" name="s" id="Seoul" <?=$arrCheck[1]?>>
+        <input type="radio" name="s" id="Busan" <?=$arrCheck[2]?>>
+        <input type="radio" name="s" id="Daegu" <?=$arrCheck[3]?>>
+        <input type="radio" name="s" id="Incheon" <?=$arrCheck[4]?>>
+        <input type="radio" name="s" id="Gwangju" <?=$arrCheck[5]?>>
+        <input type="radio" name="s" id="Daejeon" <?=$arrCheck[6]?>>
+        <input type="radio" name="s" id="Ulsan" <?=$arrCheck[7]?>>
+        <input type="radio" name="s" id="Sejong" <?=$arrCheck[8]?>>
+        <input type="radio" name="s" id="Gyeonggi" <?=$arrCheck[9]?>>
+        <input type="radio" name="s" id="Gangwon" <?=$arrCheck[10]?>>
+        <input type="radio" name="s" id="Chungbuk" <?=$arrCheck[11]?>>
+        <input type="radio" name="s" id="Chungnam" <?=$arrCheck[12]?>>
+        <input type="radio" name="s" id="Jeonbuk" <?=$arrCheck[13]?>>
+        <input type="radio" name="s" id="Jeonnam" <?=$arrCheck[14]?>>
+        <input type="radio" name="s" id="Gyeongbuk" <?=$arrCheck[15]?>>
+        <input type="radio" name="s" id="Gyeongnam" <?=$arrCheck[16]?>>
+        <input type="radio" name="s" id="Jeju" <?=$arrCheck[17]?>>
         
         <nav>
         <ul>
@@ -111,39 +114,39 @@
       // 링크 부분에 지역별 링크 넣을 수 있게 만듦
       let link; 
       if (id === "Seoul") {
-        link = "culturetap.php?a=<?php echo "서울";?>";
+        link = "culturetap.php?a=<?php echo "서울";?>&page=1";
       } else if (id === "Busan") {
-        link = "culturetap.php?a=<?php echo "부산";?>";
+        link = "culturetap.php?a=<?php echo "부산";?>&page=1";
       } else if (id === "Daegu") {
-        link = "culturetap.php?a=<?php echo "대구";?>";
+        link = "culturetap.php?a=<?php echo "대구";?>&page=1";
       } else if (id === "Incheon") {
-        link = "culturetap.php?a=<?php echo "인천";?>";
+        link = "culturetap.php?a=<?php echo "인천";?>&page=1";
       } else if (id === "Gwangju") {
-        link = "culturetap.php?a=<?php echo "광주";?>";
+        link = "culturetap.php?a=<?php echo "광주";?>&page=1";
       } else if (id === "Daejeon") {
-        link = "culturetap.php?a=<?php echo "대전";?>";
+        link = "culturetap.php?a=<?php echo "대전";?>&page=1";
       } else if (id === "Ulsan") {
-        link = "culturetap.php?a=<?php echo "울산";?>";
+        link = "culturetap.php?a=<?php echo "울산";?>&page=1";
       } else if (id === "Sejong") {
-        link = "culturetap.php?a=<?php echo "세종";?>";
+        link = "culturetap.php?a=<?php echo "세종";?>&page=1";
       } else if (id === "Gyeonggi") {
-        link = "culturetap.php?a=<?php echo "경기";?>";
+        link = "culturetap.php?a=<?php echo "경기";?>&page=1";
       } else if (id === "Gangwon") {
-        link = "culturetap.php?a=<?php echo "강원";?>";
+        link = "culturetap.php?a=<?php echo "강원";?>&page=1";
       } else if (id === "Chungbuk") {
-        link = "culturetap.php?a=<?php echo "충북";?>";
+        link = "culturetap.php?a=<?php echo "충북";?>&page=1";
       } else if (id === "Chungnam") {
-        link = "culturetap.php?a=<?php echo "충남";?>";
+        link = "culturetap.php?a=<?php echo "충남";?>&page=1";
       } else if (id === "Jeonbuk") {
-        link = "culturetap.php?a=<?php echo "전북";?>";
+        link = "culturetap.php?a=<?php echo "전북";?>&page=1";
       } else if (id === "Jeonnam") {
-        link = "culturetap.php?a=<?php echo "전남";?>";
+        link = "culturetap.php?a=<?php echo "전남";?>&page=1";
       } else if (id === "Gyeongbuk") {
-        link = "culturetap.php?a=<?php echo "경북";?>";
+        link = "culturetap.php?a=<?php echo "경북";?>&page=1";
       } else if (id === "Gyeongnam") {
-        link = "culturetap.php?a=<?php echo "경남";?>";
+        link = "culturetap.php?a=<?php echo "경남";?>&page=1";
       } else if (id === "Jeju") {
-        link = "culturetap.php?a=<?php echo "제주";?>";
+        link = "culturetap.php?a=<?php echo "제주";?>&page=1";
       }
 
       window.location.href = link;

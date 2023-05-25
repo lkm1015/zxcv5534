@@ -1,4 +1,5 @@
 <?php
+include('main/page.php');
 include('main/maintop.php');
 ?>
 <?php

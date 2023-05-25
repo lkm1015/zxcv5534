@@ -16,16 +16,16 @@
         </a>
   </div>
 	<div class="search-container">
-        <form method="POST" action="pro.php" >
+        <form method="GET" action="pro.php" >
             <input type="text" placeholder="검색어를 입력하세요" name="search">
             <button type="submit">검색</button>
         </form>
     </div>
     <nav class="navbar">
 		<ul>
-      <li><a href="trip.php?trip=<?php echo $_POST["search"];?>">여행지</a></li>    
-			<li><a href="food.php?trip=<?php echo $_POST["search"];?>">맛집</a></li>
-			<li><a href="festival.php?trip=<?php echo $_POST["search"];?>">축제</a></li>
+      <li><a href="trip.php?trip=<?php echo $_GET["search"];?>&page=1">여행지</a></li>    
+			<li><a href="food.php?trip=<?php echo $_GET["search"];?>&page=1">맛집</a></li>
+			<li><a href="festival.php?trip=<?php echo $_GET["search"];?>&page=1">축제</a></li>
 		</ul>
 	</nav>
 	</header>

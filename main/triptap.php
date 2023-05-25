@@ -111,39 +111,39 @@
       // 링크 부분에 지역별 링크 넣을 수 있게 만듦
       let link; 
       if (id === "Seoul") {
-        link = "triptap.php?a=<?php echo "서울";?>";
+        link = "triptap.php?a=<?php echo "서울";?>&page=1";
       } else if (id === "Busan") {
-        link = "triptap.php?a=<?php echo "부산";?>";
+        link = "triptap.php?a=<?php echo "부산";?>&page=1";
       } else if (id === "Daegu") {
-        link = "triptap.php?a=<?php echo "대구";?>";
+        link = "triptap.php?a=<?php echo "대구";?>&page=1";
       } else if (id === "Incheon") {
-        link = "triptap.php?a=<?php echo "인천";?>";
+        link = "triptap.php?a=<?php echo "인천";?>&page=1";
       } else if (id === "Gwangju") {
-        link = "triptap.php?a=<?php echo "광주";?>";
+        link = "triptap.php?a=<?php echo "광주";?>&page=1";
       } else if (id === "Daejeon") {
-        link = "triptap.php?a=<?php echo "대전";?>";
+        link = "triptap.php?a=<?php echo "대전";?>&page=1";
       } else if (id === "Ulsan") {
-        link = "triptap.php?a=<?php echo "울산";?>";
+        link = "triptap.php?a=<?php echo "울산";?>&page=1";
       } else if (id === "Sejong") {
-        link = "triptap.php?a=<?php echo "세종";?>";
+        link = "triptap.php?a=<?php echo "세종";?>&page=1";
       } else if (id === "Gyeonggi") {
-        link = "triptap.php?a=<?php echo "경기";?>";
+        link = "triptap.php?a=<?php echo "경기";?>&page=1";
       } else if (id === "Gangwon") {
-        link = "triptap.php?a=<?php echo "강원";?>";
+        link = "triptap.php?a=<?php echo "강원";?>&page=1";
       } else if (id === "Chungbuk") {
-        link = "triptap.php?a=<?php echo "충북";?>";
+        link = "triptap.php?a=<?php echo "충북";?>&page=1";
       } else if (id === "Chungnam") {
-        link = "triptap.php?a=<?php echo "충남";?>";
+        link = "triptap.php?a=<?php echo "충남";?>&page=1";
       } else if (id === "Jeonbuk") {
-        link = "triptap.php?a=<?php echo "전북";?>";
+        link = "triptap.php?a=<?php echo "전북";?>&page=1";
       } else if (id === "Jeonnam") {
-        link = "triptap.php?a=<?php echo "전남";?>";
+        link = "triptap.php?a=<?php echo "전남";?>&page=1";
       } else if (id === "Gyeongbuk") {
-        link = "triptap.php?a=<?php echo "경북";?>";
+        link = "triptap.php?a=<?php echo "경북";?>&page=1";
       } else if (id === "Gyeongnam") {
-        link = "triptap.php?a=<?php echo "경남";?>";
+        link = "triptap.php?a=<?php echo "경남";?>&page=1";
       } else if (id === "Jeju") {
-        link = "triptap.php?a=<?php echo "제주";?>";
+        link = "triptap.php?a=<?php echo "제주";?>&page=1";
       }
 
       window.location.href = link;

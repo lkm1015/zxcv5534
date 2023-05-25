@@ -24,9 +24,9 @@
     </div>
     <nav class="navbar">
 		<ul>
-            <li><a href="trip.php?trip=<?php echo $_GET["trip"];?>">여행지</a></li>    
-			<li><a href="food.php?trip=<?php echo $_GET["trip"];?>">맛집</a></li>
-			<li><a href="festival.php?trip=<?php echo $_GET["trip"];;?>">축제</a></li>
+            <li><a href="trip.php?trip=<?php echo $_GET["trip"];?>&page=1">여행지</a></li>    
+			<li><a href="food.php?trip=<?php echo $_GET["trip"];?>&page=1">맛집</a></li>
+			<li><a href="festival.php?trip=<?php echo $_GET["trip"];?>&page=1">축제</a></li>
 		</ul>
 	</nav>
 	</header>
