@@ -24,8 +24,8 @@
     
   <div class="container">
 
-        <input type="radio" name="s" id="Seoul" checked>
-        <input type="radio" name="s" id="Busan">
+        <input type="radio" name="s" id="Seoul" >
+        <input type="radio" name="s" id="Busan" >
         <input type="radio" name="s" id="Daegu">
         <input type="radio" name="s" id="Incheon">
         <input type="radio" name="s" id="Gwangju">

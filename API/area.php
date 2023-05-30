@@ -16,9 +16,23 @@ $arr = json_decode($response,true);
     ?>
     <p>
     <div style="display:inline-block;vertical-align:top;">
-    <img src=<?php echo $arr1["firstimage"]?> class="thumbnail-img">
-    </div>
     <?php
+    if($arr1["firstimage"]==""){
+    ?>
+    <img src="photo/thum_detail.jpg" class="thumbnail-img">
+    <?php
+    }
+    else{
+    ?>
+    <img src=<?php echo $arr1["firstimage"]?> class="thumbnail-img">
+    <?php
+    }
+    ?> 
+    </div>
+
+    
+    <?php
+    
         //echo $arr1["firstimage"]."<br>"; //지역의 사진
         
     ?>

@@ -27,5 +27,3 @@ include('API/area.php');//지역API
         </li>
       </ul>
     </nav>
-</body>
-</html>

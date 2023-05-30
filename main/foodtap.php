@@ -24,8 +24,8 @@
     
   <div class="container">
 
-        <input type="radio" name="s" id="Seoul" checked>
-        <input type="radio" name="s" id="Busan">
+        <input type="radio" name="s" id="Seoul" >
+        <input type="radio" name="s" id="Busan" >
         <input type="radio" name="s" id="Daegu">
         <input type="radio" name="s" id="Incheon">
         <input type="radio" name="s" id="Gwangju">
@@ -48,7 +48,7 @@
             <label class="Seoul" for="Seoul">
             서울
             </label>
-            <label class="Busan" for="Busan">
+          <label class="Busan" for="Busan" >
             부산
             </label>
             <label class="Daegu" for="Daegu">
@@ -101,19 +101,20 @@
         </nav>
     </div>
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const labels = document.querySelectorAll("label");
-    labels.forEach(function(label) {
-    label.addEventListener("click", function() {
+
+      document.addEventListener("DOMContentLoaded", function() {
+      const labels = document.querySelectorAll("label");
+      labels.forEach(function(label) {
+      label.addEventListener("click", function() {
       const id = label.getAttribute("for");
-      document.getElementById(id).checked = true;
+      document.getElementById(id).checked = !document.getElementById(id).checked;
 
       // 링크 부분에 지역별 링크 넣을 수 있게 만듦
       let link; 
       if (id === "Seoul") {
         link = "foodtap.php?a=<?php echo "서울";?>&page=1";
       } else if (id === "Busan") {
-        link = "foodtap.php?a=<?php echo "부산";?>&page=1";
+        link = "foodtap.php?a=<?php echo "부산";?>&page=1" ;
       } else if (id === "Daegu") {
         link = "foodtap.php?a=<?php echo "대구";?>&page=1";
       } else if (id === "Incheon") {
