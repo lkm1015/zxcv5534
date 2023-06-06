@@ -22,7 +22,7 @@ body {
   .navbar {
     display: flex;
     justify-content: center;
-    background-color: #7700ff;
+    background-color: #000000;
     color: #ffffff;
   }
 
@@ -139,3 +139,8 @@ body {
   .ct {
     justify-content: center;
   }
+  p {
+    font-weight:bold; 
+    background :rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+   }

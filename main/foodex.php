@@ -16,16 +16,16 @@
         </a>
   </div>
 	<div class="search-container">
-        <form method="POST" action="pro.php" >
-            <input type="text" placeholder="검색어를 입력하세요" name="search">
+        <form method="GET" action="naver1.php" >
+            <input type="text" placeholder="검색어를 입력하세요" name="trip">
             <button type="submit">검색</button>
         </form>
     </div>
     
   <div class="container">
 
-        <input type="radio" name="s" id="Seoul" >
-        <input type="radio" name="s" id="Busan" >
+        <input type="radio" name="s" id="Seoul">
+        <input type="radio" name="s" id="Busan">
         <input type="radio" name="s" id="Daegu">
         <input type="radio" name="s" id="Incheon">
         <input type="radio" name="s" id="Gwangju">
@@ -48,7 +48,7 @@
             <label class="Seoul" for="Seoul">
             서울
             </label>
-          <label class="Busan" for="Busan" >
+            <label class="Busan" for="Busan">
             부산
             </label>
             <label class="Daegu" for="Daegu">
@@ -96,55 +96,56 @@
             <label class="Jeju" for="Jeju">
             제주
             </label>
+            
 
         </ul>
         </nav>
     </div>
     <script>
-
-      document.addEventListener("DOMContentLoaded", function() {
-      const labels = document.querySelectorAll("label");
-      labels.forEach(function(label) {
-      label.addEventListener("click", function() {
+    document.addEventListener("DOMContentLoaded", function() {
+    const labels = document.querySelectorAll("label");
+    labels.forEach(function(label) {
+    label.addEventListener("click", function() {
       const id = label.getAttribute("for");
-      document.getElementById(id).checked = !document.getElementById(id).checked;
+      document.getElementById(id).checked = true;
 
       // 링크 부분에 지역별 링크 넣을 수 있게 만듦
       let link; 
       if (id === "Seoul") {
-        link = "foodtap.php?a=<?php echo "서울";?>&page=1";
+        link = "naver1.php?trip=<?php echo "서울";?>";
       } else if (id === "Busan") {
-        link = "foodtap.php?a=<?php echo "부산";?>&page=1" ;
+        link = "naver1.php?trip=<?php echo "부산";?>";
       } else if (id === "Daegu") {
-        link = "foodtap.php?a=<?php echo "대구";?>&page=1";
+        link = "naver1.php?trip=<?php echo "대구";?>";
+        
       } else if (id === "Incheon") {
-        link = "foodtap.php?a=<?php echo "인천";?>&page=1";
+        link = "naver1.php?trip=<?php echo "인천";?>";
       } else if (id === "Gwangju") {
-        link = "foodtap.php?a=<?php echo "광주";?>&page=1";
+        link = "naver1.php?trip=<?php echo "광주";?>";
       } else if (id === "Daejeon") {
-        link = "foodtap.php?a=<?php echo "대전";?>&page=1";
+        link = "naver1.php?trip=<?php echo "대전";?>";
       } else if (id === "Ulsan") {
-        link = "foodtap.php?a=<?php echo "울산";?>&page=1";
+        link = "naver1.php?trip=<?php echo "울산";?>";
       } else if (id === "Sejong") {
-        link = "foodtap.php?a=<?php echo "세종";?>&page=1";
+        link = "naver1.php?trip=<?php echo "세종";?>";
       } else if (id === "Gyeonggi") {
-        link = "foodtap.php?a=<?php echo "경기";?>&page=1";
+        link = "naver1.php?trip=<?php echo "경기";?>";
       } else if (id === "Gangwon") {
-        link = "foodtap.php?a=<?php echo "강원";?>&page=1";
+        link = "naver1.php?trip=<?php echo "강원";?>";
       } else if (id === "Chungbuk") {
-        link = "foodtap.php?a=<?php echo "충북";?>&page=1";
+        link = "naver1.php?trip=<?php echo "충북";?>";
       } else if (id === "Chungnam") {
-        link = "foodtap.php?a=<?php echo "충남";?>&page=1";
+        link = "naver1.php?trip=<?php echo "충남";?>";
       } else if (id === "Jeonbuk") {
-        link = "foodtap.php?a=<?php echo "전북";?>&page=1";
+        link = "naver1.php?trip=<?php echo "전북";?>";
       } else if (id === "Jeonnam") {
-        link = "foodtap.php?a=<?php echo "전남";?>&page=1";
+        link = "naver1.php?trip=<?php echo "전남";?>";
       } else if (id === "Gyeongbuk") {
-        link = "foodtap.php?a=<?php echo "경북";?>&page=1";
+        link = "naver1.php?trip=<?php echo "경북";?>";
       } else if (id === "Gyeongnam") {
-        link = "foodtap.php?a=<?php echo "경남";?>&page=1";
+        link = "naver1.php?trip=<?php echo "경남";?>";
       } else if (id === "Jeju") {
-        link = "foodtap.php?a=<?php echo "제주";?>&page=1";
+        link ="naver1.php?trip=<?php echo "제주";?>";
       }
 
       window.location.href = link;
