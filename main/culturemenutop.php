@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>가라GO</title>
     <link rel="stylesheet" href="mainup.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -23,11 +23,11 @@
         </form>
     </div>
     <div class="con">
-    <nav id = "topMenu" >
+    <nav id="topNav" class="top-bar__menu-box-1">
       <ul>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">서울</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">서울</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "서울";?>&b=1&page=1">강남</a></li>
             <li><a href="culturetap.php?a=<?php echo "서울";?>&b=2&page=1">강동</a></li>
             <li><a href="culturetap.php?a=<?php echo "서울";?>&b=3&page=1">강북</a></li>
@@ -55,9 +55,9 @@
             <li><a href="culturetap.php?a=<?php echo "서울";?>&b=25&page=1">중랑</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">부산</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">부산</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "부산";?>&b=1&page=1">강서</a></li>
             <li><a href="culturetap.php?a=<?php echo "부산";?>&b=2&page=1">금정</a></li>
             <li><a href="culturetap.php?a=<?php echo "부산";?>&b=3&page=1">기장</a></li>
@@ -76,9 +76,9 @@
             <li><a href="culturetap.php?a=<?php echo "부산";?>&b=16&page=1">해운대</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">인천</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">인천</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "인천";?>&b=1&page=1">강화</a></li>
             <li><a href="culturetap.php?a=<?php echo "인천";?>&b=2&page=1">계양</a></li>
             <li><a href="culturetap.php?a=<?php echo "인천";?>&b=3&page=1">미추홀</a></li>
@@ -91,9 +91,9 @@
             <li><a href="culturetap.php?a=<?php echo "인천";?>&b=10&page=1">중구</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">대구</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">대구</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "대구";?>&b=1&page=1">남구</a></li>
             <li><a href="culturetap.php?a=<?php echo "대구";?>&b=2&page=1">달서</a></li>
             <li><a href="culturetap.php?a=<?php echo "대구";?>&b=3&page=1">달성</a></li>
@@ -104,9 +104,9 @@
             <li><a href="culturetap.php?a=<?php echo "대구";?>&b=8&page=1">중구</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">대전</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">대전</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "대전";?>&b=1&page=1">대덕</a></li>
             <li><a href="culturetap.php?a=<?php echo "대전";?>&b=2&page=1">동구</a></li>
             <li><a href="culturetap.php?a=<?php echo "대전";?>&b=3&page=1">서구</a></li>
@@ -114,9 +114,9 @@
             <li><a href="culturetap.php?a=<?php echo "대전";?>&b=5&page=1">중구</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">광주</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">광주</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "광주";?>&b=1&page=1">광산</a></li>
             <li><a href="culturetap.php?a=<?php echo "광주";?>&b=2&page=1">남구</a></li>
             <li><a href="culturetap.php?a=<?php echo "광주";?>&b=3&page=1">동구</a></li>
@@ -124,9 +124,9 @@
             <li><a href="culturetap.php?a=<?php echo "광주";?>&b=5&page=1">서구</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">울산</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">울산</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "울산";?>&b=1&page=1">중구</a></li>
             <li><a href="culturetap.php?a=<?php echo "울산";?>&b=2&page=1">남구</a></li>
             <li><a href="culturetap.php?a=<?php echo "울산";?>&b=3&page=1">동구</a></li>
@@ -134,15 +134,15 @@
             <li><a href="culturetap.php?a=<?php echo "울산";?>&b=5&page=1">울주</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="culturetap.php?a=<?php echo "세종";?>&b=1&page=1">세종</a>
+        <li>
+          <a href="culturetap.php?a=<?php echo "세종";?>&b=1&page=1">세종</a>
           <!-- <ul>
             <li><a href="culturetap.php?a=<?// echo "세종";?>&b=1&page=1">중구</a></li>
           </ul> -->
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">강원</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">강원</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "강원";?>&b=1&page=1">강릉</a></li>
             <li><a href="culturetap.php?a=<?php echo "강원";?>&b=2&page=1">고성</a></li>
             <li><a href="culturetap.php?a=<?php echo "강원";?>&b=3&page=1">동해</a></li>
@@ -163,9 +163,9 @@
             <li><a href="culturetap.php?a=<?php echo "강원";?>&b=18&page=1">횡성</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">경기</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">경기</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "경기";?>&b=1&page=1">가평</a></li>
             <li><a href="culturetap.php?a=<?php echo "경기";?>&b=2&page=1">고양</a></li>
             <li><a href="culturetap.php?a=<?php echo "경기";?>&b=3&page=1">과천</a></li>
@@ -199,9 +199,9 @@
             <li><a href="culturetap.php?a=<?php echo "경기";?>&b=31&page=1">화성</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">전북</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">전북</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=1&page=1">고창</a></li>
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=2&page=1">군산</a></li>
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=3&page=1">김제</a></li>
@@ -218,9 +218,9 @@
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=14&page=1">진안</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">전남</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">전남</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=1&page=1">강진</a></li>
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=2&page=1">고흥</a></li>
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=3&page=1">곡성</a></li>
@@ -245,9 +245,9 @@
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=22&page=1">화순</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">충북</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">충북</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "충북";?>&b=1&page=1">괴산</a></li>
             <li><a href="culturetap.php?a=<?php echo "충북";?>&b=2&page=1">단양</a></li>
             <li><a href="culturetap.php?a=<?php echo "충북";?>&b=3&page=1">보은</a></li>
@@ -262,9 +262,9 @@
             <li><a href="culturetap.php?a=<?php echo "충북";?>&b=12&page=1">증평</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">충남</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">충남</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "충남";?>&b=1&page=1">공주</a></li>
             <li><a href="culturetap.php?a=<?php echo "충남";?>&b=2&page=1">금산</a></li>
             <li><a href="culturetap.php?a=<?php echo "충남";?>&b=3&page=1">논산</a></li>
@@ -282,9 +282,9 @@
             <li><a href="culturetap.php?a=<?php echo "충남";?>&b=15&page=1">계롱</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">경북</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">경북</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "경북";?>&b=1&page=1">경산</a></li>
             <li><a href="culturetap.php?a=<?php echo "경북";?>&b=2&page=1">경주</a></li>
             <li><a href="culturetap.php?a=<?php echo "경북";?>&b=3&page=1">고령</a></li>
@@ -310,9 +310,9 @@
             <li><a href="culturetap.php?a=<?php echo "경북";?>&b=23&page=1">포항</a></li>
           </ul> 
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">경남</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">경남</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "경남";?>&b=1&page=1">거제</a></li>
             <li><a href="culturetap.php?a=<?php echo "경남";?>&b=2page=1">거창</a></li>
             <li><a href="culturetap.php?a=<?php echo "경남";?>&b=3&page=1">고성</a></li>
@@ -335,9 +335,9 @@
             <li><a href="culturetap.php?a=<?php echo "경남";?>&b=21&page=1">합천</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">전북</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">전북</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=1&page=1">고창</a></li>
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=2&page=1">군산</a></li>
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=3&page=1">김제</a></li>
@@ -354,9 +354,9 @@
             <li><a href="culturetap.php?a=<?php echo "전북";?>&b=14&page=1">진안</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">전남</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">전남</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=1&page=1">강진</a></li>
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=2&page=1">고흥</a></li>
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=3&page=1">곡성</a></li>
@@ -381,9 +381,9 @@
             <li><a href="culturetap.php?a=<?php echo "전남";?>&b=22&page=1">화순</a></li>
           </ul>
         </li>
-        <li class="topMenuLi">
-          <a class ="menuLink" href="#">제주</a>
-          <ul class="submenu">
+        <li>
+          <a href="#">제주</a>
+          <ul>
             <li><a href="culturetap.php?a=<?php echo "제주";?>&b=1&page=1">남제주</a></li>
             <li><a href="culturetap.php?a=<?php echo "제주";?>&b=2&page=1">북제주</a></li>
             <li><a href="culturetap.php?a=<?php echo "제주";?>&b=3&page=1">서귀포</a></li>

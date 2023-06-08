@@ -30,6 +30,9 @@ include('main/foodex.php');
       $arr = json_decode($response,true);
       for( $i=0; $i<5; $i++){
         $arr2= $arr["items"][$i];
+        ?>
+        <p style="text-align:center;">
+        <?php
         print_r($arr2["title"]);
         echo "<br>";
         if($arr2["link"]==True){
@@ -45,5 +48,6 @@ include('main/foodex.php');
         }
     } else {
       echo "Error 내용:".$response;
-    }
-  ?>
+    }?>
+    </p>
+    

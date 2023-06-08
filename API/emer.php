@@ -16,14 +16,25 @@ if($arr2["RESULT"]==True){  //전송된 재난문자 정보가 없는 경우
     echo "".$n."월 1일부터 ".$j."일까지 ".$_GET["weather"]."에 전송된 재난문자정보가 없습니다.";
 }else{                      //전송된 재난문자 정보가 있는 경우
     foreach($arr2["DisasterMsg2"][1]["row"] as $arr3){
-        echo $arr3["create_date"]."<br>"; //재난문자 수신 날짜
-        echo $arr3["location_name"]."<br>"; //재난이 발생한 주소
-        echo $arr3["msg"]."<hr><br>"; //재난문자 내용
+        ?>
+
+        <div style="font:size 30px;font-weight:bold; color:blue;">
+        <?php
+        echo $arr3["msg"]."<br>"; //재난문자 내용
+        ?>  </div>
+        <div style="color:black;">
+        <?php
+        echo $arr3["create_date"]; //재난문자 수신 날짜
+        echo $arr3["location_name"]."<hr><br>"; //재난이 발생한 주소
+        ?>
+        </div>
+    
+    <?php
         }
 }
 
 
-    
+
 // switch($i){
 //     case $i="RESULT":
 //         echo "현재".$d."월에 전송된 재난문자정보가 없습니다.";
