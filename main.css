@@ -267,3 +267,21 @@
   background-color: #66edff;
   color: #ffffff;
 }
+.button2 {
+  bottom: 500;
+  right: 100;
+  width: 40%;
+  height: 10;
+
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-top: 10px;
+
+  margin-bottom: 1px;
+  position: relative;
+}
+.button2:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

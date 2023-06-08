@@ -50,11 +50,12 @@ a {
 
 .top-bar__menu-box-1 > ul > li {
   display: inline-block;
+  margin: auto;
 }
 
 .top-bar__menu-box-1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2px;
   width: max-content;
 }
 
@@ -69,8 +70,10 @@ a {
   padding: 20px 34px;
 }
 
+
 .top-bar__menu-box-1 ul > li:hover > a {
   background-color: #555;
+  
 }
 
 .top-bar__menu-box-1 > ul > li {
@@ -78,10 +81,11 @@ a {
 }
 
 .top-bar__menu-box-1 > ul > li > ul {
+  font-size: 1rem;
   position: absolute;
   top: 100%;
   left: -20%;
-  width: 160%;
+  width: 150%;
   max-height :400px;/* you can change as you need it */
   background-color: #202020cc;
   overflow-x:hidden ;
@@ -116,6 +120,7 @@ a {
   text-decoration: underline;                  
    
   }
+  
   
 /*.topNav ul li ul{
   max-height :10px;/* you can change as you need it */

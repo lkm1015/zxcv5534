@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-  <div class="home-button" style="text-align: center;">
-        <a href="main.html">
-          <img src="photo/exlogo.png">
-        </a>
-  </div>
-	<div class="search-container">
-        <form method="POST" action="pro.php" >
+<div class="bighead">
+  <div class="searchArea">
+            <form method="get" action="pro.php?page=1" >
             <input type="text" placeholder="검색어를 입력하세요" name="search">
             <button type="submit">검색</button>
         </form>
-    </div>
+          </div>
+          <ul class="nav">
+            <div class="home-button">
+              <a href="main.html">
+                <img src="photo/exlogo.png">
+              </a>
+            </div>
+            <li><a href="nofood.php?page=1">맛집</a></li>
+            <li><a href="notrip.php?page=1">여행지</a></li>
+            <li><a href="noculture.php?page=1">문화재</a></li>
+            <li><a href="nofestival.php?page=1">축제</a></li>
+          </ul>
+  </div>
     <div class="con">
     <nav id="topNav" class="top-bar__menu-box-1">
       <ul>
