@@ -27,9 +27,10 @@ echo "</h6>";
 
 $page = $_GET["page"];
 $a = $_GET["a"];
+$contents = $_GET["content"];
 include('main/case.php');
 
-$areaUri= "https://apis.data.go.kr/B551011/KorService1/areaBasedSyncList1?serviceKey=E%2BtYKbl8Zfj065tKHO%2BCkITDTCtAUsO%2FeBtnqQWouaJr8%2FJmVMzZ%2BTtcylbMsR%2B%2Fct28ekxvIHcWVJBbp3CEtg%3D%3D&numOfRows=100&pageNo=". $page ."&MobileOS=ETC&MobileApp=AppTest&_type=json&showflag=1&listYN=Y&arrange=A&contentTypeId=39&areaCode=". $a . "&sigunguCode=" . $_GET["b"]; 
+$areaUri= "https://apis.data.go.kr/B551011/KorService1/areaBasedSyncList1?serviceKey=E%2BtYKbl8Zfj065tKHO%2BCkITDTCtAUsO%2FeBtnqQWouaJr8%2FJmVMzZ%2BTtcylbMsR%2B%2Fct28ekxvIHcWVJBbp3CEtg%3D%3D&numOfRows=100&pageNo=". $page ."&MobileOS=ETC&MobileApp=AppTest&_type=json&showflag=1&listYN=Y&arrange=A&contentTypeId=12&areaCode=". $a . "&sigunguCode=" . $_GET["b"]; 
 
 
 $ch = curl_init();
@@ -42,7 +43,6 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $response = curl_exec($ch);
 
 $arr = json_decode($response,true);
-
 
 
 $some = 0;
@@ -91,14 +91,21 @@ foreach($arr["response"]["body"]["items"]["item"] as $arr1){
   <?php
   }
   else {
-  }
-  
+    // echo "<script>alert('해당지역에는 $asdasd 관련된 키워드가 없습니다.');
+    // history.back();
+    // </script>";
+}
+
 }
 if($some == 0){
-    echo "<script>alert('해당지역에는 $asdasd 관련된 키워드가 없습니다.');
-    history.back();
-    </script>";
+  echo "<script>alert('해당지역에는 $asdasd 관련된 키워드가 없습니다.');
+  history.back();
+  </script>";
 }
+  
+
+
+    
     
 
 
